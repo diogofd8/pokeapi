@@ -1,0 +1,13 @@
+table:
+  name: pokemon_v2_pokemonstatpast
+  schema: public
+object_relationships:
+- name: pokemon_v2_pokemon
+  using:
+    foreign_key_constraint_on: pokemon_id
+- name: pokemon_v2_generation
+  using:
+    foreign_key_constraint_on: generation_id
+- name: pokemon_v2_stat
+  using:
+    foreign_key_constraint_on: stat_id
